@@ -1,19 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
-main(){
-	int n;
-	int sum = 0; 
-	printf("Moi ban nhap mot so nguyen co 4 chu so: \n");
-	scanf("%d",&n);
-	while(n != 0){
-		int i ;
-		i = n % 10;
-		sum = sum + i; 
-		n = n / 10;
-		 
-	} 
-	printf("Tong cac chu so ban vua nhap la: %d \n",sum); 
-	 
-} 
- 
-
+int main(){
+	printf("Moi nhap vao mot so nguyen co 4 chu so ");
+	int n,sum=0,n1,n2,n3;	scanf("%d", &n);
+	n1 = n%10;
+	n/=10;
+	n2=n%10;
+	n/=10;
+	n3 = n%10;
+	n/=10;
+	sum += n1 + n2 + n3 + n;
+	printf("Tong cac chu so nhap vao la %d ", sum);
