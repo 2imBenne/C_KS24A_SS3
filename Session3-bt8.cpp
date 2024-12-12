@@ -1,13 +1,8 @@
 #include <stdio.h>
 
 int main(){
-	int n,reverse = 0;
-	printf("Moi ban nhap mot so nguyen co 4 chu so: "); 
-	scanf("%d",&n); 
-	while( n != 0) {
-		int i = n % 10;
-		reverse = reverse * 10 + i;
-		n /= 10; 
-		  }
-		  printf("So nghich dao la: %d \n",reverse); 
-} 
+	printf("Moi nhap vao mot so nguyen co 4 chu so ");
+	int n;	scanf("%d", &n);
+	
+	printf("Day so lat nguoc la %d%d%d%d", n%10,(n/10)%10,(n/100)%10,(n/1000)%10);
+}
