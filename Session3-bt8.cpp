@@ -1,4 +1,5 @@
 #include <stdio.h>
+//
 
 int main(){
 	printf("Moi nhap vao mot so nguyen co 4 chu so ");
